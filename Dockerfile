@@ -13,4 +13,4 @@ RUN touch /etc/s6-overlay/s6-rc.d/user/contents.d/unbount
 
 RUN unbound-anchor; unbound-checkconf
 
-ENTRYPOINT /start-services.sh
+ENTRYPOINT /s6-init
